@@ -1,0 +1,214 @@
+@import url('normalize.css');
+
+html {
+	min-height: 100%;
+	position: relative;
+}
+body {
+	background-color: #F1F1F1;
+	color: #333;
+	margin: 0 0 34px;
+	font-size: 14px;
+	font-family: 'Roboto', sans-serif;
+}
+header {
+	margin: 0 auto;
+	width: 1000px;
+	padding: 15px;
+}
+header .logo-content {
+	float: left;
+	margin-right: 20px;
+}
+header .title-content {
+	float: left;
+}
+header .title-content h1 {
+	float: left;
+}
+header .title-content h2 {
+	float: left;
+	margin-top: 40px;
+	margin-left: 30px;
+	font-size: 16px;
+	color: #0BA5C7;
+
+}
+a.publish-article {
+	display: inline-block;
+	background: #0BA5C7;
+	padding: 5px 7px;
+	color: #FFF;
+	text-decoration: none;
+}
+header img.logo {
+	max-height: 100px;
+}
+header::after {
+	content: " ";
+	clear: both;
+	display: block;
+}
+main {
+	background-color: #FFF;
+	margin: 0 auto;
+	width: 1000px;
+	padding: 15px;
+	border-radius: 5px;
+}
+.text-center {
+	text-align: center;
+}
+.text-right {
+	text-align: right;
+}
+.text-left {
+	text-align: left;
+}
+.link {
+	color: #0BA5C7;
+	text-decoration: none;
+}
+.link:hover {
+	text-decoration: underline;
+}
+
+article {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border-bottom: 1px dotted #DDD;
+}
+article > .info-post::after {
+	content: " ";
+	display: block;
+	clear: both;
+}
+article > .info-post > .title-post {
+	float: left;
+}
+article > .info-post > .date-post {
+	float: right;
+	color: #7C7C7C;
+}
+article > img.caption {
+	border: 1px solid #000;
+	background: #FFF;
+	padding: 5px;
+	float: left;
+	margin-right: 10px;
+	margin-bottom: 15px;
+	clear: both;
+}
+article::after {
+	content: " ";
+	display: block;
+	clear: both;
+}
+.pagination-content {
+	margin: 10px auto;
+}
+ul.pagination {
+	display: inline-block;
+}
+ul.pagination > li:first-child{
+	border-radius: 5px 0 0 5px;
+	border-left: 1px solid rgba(0, 0, 0, 0.6);
+}
+ul.pagination > li:last-child {
+	border-radius: 0px 5px 5px 0;
+}
+ul.pagination > li {
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	font-size: 14px;
+	text-align: center;
+	border: 1px solid rgba(0, 0, 0, 0.6);
+	border-left: 0;
+}
+ul.pagination > li.active {
+	background: #0BA5C7;
+	color: #FFF;
+} 
+ul.pagination > li > a {
+	text-decoration: none;
+	color: #0BA5C7;
+}
+.commentaires {
+	background: #FEFEFE;
+}
+.commentaires > .comment {
+	padding: 5px 7px;
+	margin-bottom: 5px;
+}
+.commentaires > .comment:nth-child(odd) {
+	background: #CDE9FF;
+}
+.commentaires > .comment:nth-child(even) {
+	background: #DBDBDB;
+}
+.commentaires > .comment > .author {
+	color: #7C7C7C;
+	font-size: 11px;
+}
+.commentaires > .comment > .content {
+	color: #333;
+}
+.successContent {
+	margin: 15px;
+	padding: 10px 5px 10px 15px;
+	border-left: 2px solid #3C763D;
+	color: #3C763D;
+	background: #DFF0D8;
+}
+.errorContent {
+	margin: 15px;
+	padding: 10px 5px 10px 15px;
+	border-left: 2px solid #F00;
+	color: #F00;
+	background: #F2DEDE;
+}
+footer {
+	position: absolute;
+	width: 100%;
+	left: 0;
+	bottom: 0;
+	height: 25px;
+	background-color: red;
+	color: #000;
+	font-size: 10px;
+	margin: 0 auto;
+}
+footer > p {
+	margin: 0;
+	padding: 5px 15px
+}
+footer a {
+	color: #000;
+	text-decoration: underline;
+}
+/* Les formulaires */
+label {
+	font-weight: bold;
+	margin: 5px 0 5px 10px;
+	min-width: 150px;
+	display: inline-block;
+	vertical-align: top;
+}
+input[type=submit], input[type=button] {
+	padding: 6px 14px;
+	background: #3A87AD;
+	color: #FFF;
+	border: 1px solid #217da8;
+	border-radius: 2px;
+	margin: 5px 0 5px 10px;
+}
+input[type=submit]:active, input[type=button]:active {
+	background: #1e698c;
+}
+input[type="text"], input[type="email"], select, textarea {
+	display: inline-block;
+	padding: 4px 6px;
+	margin: 5px 0 5px 10px;
+}
